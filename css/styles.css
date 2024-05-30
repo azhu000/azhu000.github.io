@@ -8,24 +8,37 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    
+    
 }
 
 .container {
-    text-align: center;
+    /* text-align: center; */
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* flex: auto; */
 }
 
 header {
-    background: #333;
+    background: #70cce3;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 12;
+    position: sticky;
+    /* width: 100%; */
+    top: 0;
 }
 
 header h1 {
     margin-bottom: 10px;
     font-size: 2.5em;
+}
+
+header h2 p {
+    margin-bottom: 10px;
+    font-size: 3.5em;
 }
 
 header p {
@@ -35,7 +48,8 @@ header p {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
     gap: 15px;
 }
 
@@ -65,6 +79,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project {
@@ -77,18 +93,30 @@ h2 {
 }
 
 .skills {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+    /* justify-content: center; */
     list-style-type: none;
+    /* padding: 0; */
 }
 
 .skills li {
-    background: #333;
+    background: #558fcd;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.skills li img {
+    max-width: 100px;  /* Adjust the width of the icons */
+    height: auto;  /* Maintain aspect ratio */
 }
 
 .technologies {
@@ -143,6 +171,9 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .btn {
@@ -157,7 +188,44 @@ footer {
     text-align: center;
     cursor: pointer;
     transition: background 0.3s;
+    /* width: fit-content; */
+    width: 100%;
 }
 .btn:hover {
     background-color: #6ce28b;
 }
+
+.btn-wip {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0fc6db;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+.btn-wip:hover {
+    background-color: #f23405;
+}
+
+.s_container {
+    text-align: center;
+    /* width: 15%; */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 12%;
+}
+
+.paraBlock {
+    text-align: center;
+    /* justify-content: center; */
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
